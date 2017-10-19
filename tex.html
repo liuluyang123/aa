@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<textarea id="tex"></textarea>
+<input id="btn" type="button" value="提交"/>
+</body>
+</html>
+<script>
+
+
+    tex.onkeydown=function(){
+        var sum=tex.value.length+1
+        if(sum>60){
+            btn.disabled="disabled";
+        }
+        if(sum<=60){
+            btn.removeAttribute("disabled")
+        }
+        console.log(sum)
+    }
+
+
+</script>
